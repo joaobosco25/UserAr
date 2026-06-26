@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0787c8">
+  <meta name="description" content="Manutenção, diagnóstico, recarga de gás e higienização de ar-condicionado automotivo em Uberlândia.">
+  <meta property="og:title" content="UseAr | Ar-condicionado automotivo">
+  <meta property="og:description" content="Manutenção completa, diagnóstico preciso e atendimento especializado para o ar-condicionado do seu veículo.">
+  <meta property="og:image" content="assets/img/og-usear.webp">
+  <meta property="og:type" content="website">
+  <title>UseAr | Ar-condicionado automotivo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            usear: {
+              50: '#ecf8ff',
+              100: '#d5efff',
+              500: '#0787c8',
+              600: '#026da8',
+              700: '#075887',
+              950: '#06131d'
+            }
+          },
+          fontFamily: { sans: ['Poppins', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white text-slate-900 antialiased">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" id="inicio">
+    <div class="header-inner mx-auto flex w-full max-w-[1500px] items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a class="brand" href="#inicio" aria-label="UseAr - voltar ao início">
+        <img src="assets/img/logo-usear.png" alt="UseAr Ar-condicionado Automotivo" width="320" height="111">
+      </a>
+
+      <button class="menu-toggle lg:hidden" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="menu-principal" class="main-nav" aria-label="Navegação principal">
+        <a href="#inicio">Home</a>
+        <a href="#diferenciais">Quem Somos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#oficina">Trabalhos realizados</a>
+        <a class="nav-cta" href="https://wa.me/5534999919637?text=Olá%2C%20vim%20pelo%20site%20da%20UseAr%20e%20quero%20agendar%20um%20atendimento." target="_blank" rel="noopener">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-label="Apresentação da UseAr">
+      <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+          <article class="swiper-slide hero-slide hero-slide--thermometer">
+            <div class="hero-overlay"></div>
+            <div class="hero-content mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
+              <div class="hero-copy" data-aos="fade-right" data-aos-duration="800">
+                <span class="hero-kicker"><i class="fa-solid fa-snowflake" aria-hidden="true"></i> Especialistas em climatização automotiva</span>
+                <h1>Manutenção de<br>Ar Condicionado<br>Automotivo</h1>
+                <p>Recarga de gás, troca de filtros, higienização com ozônio e reparos em geral no sistema de ar-condicionado.</p>
+                <div class="hero-actions">
+                  <a class="button button--primary" href="https://wa.me/5534999919637?text=Olá%2C%20quero%20solicitar%20um%20orçamento%20para%20o%20ar-condicionado%20do%20meu%20veículo." target="_blank" rel="noopener">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                    Orçamento via WhatsApp
+                  </a>
+                  <a class="button button--ghost" href="#servicos">Conhecer serviços</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="swiper-slide hero-slide hero-slide--workshop">
+            <div class="hero-overlay"></div>
+            <div class="hero-content mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
+              <div class="hero-copy">
+                <span class="hero-kicker"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i> Diagnóstico técnico e preciso</span>
+                <h2>Seu carro com<br>climatização eficiente<br>novamente</h2>
+                <p>Equipamentos adequados, equipe experiente e uma análise completa antes de qualquer reparo.</p>
+                <a class="button button--primary" href="#diferenciais">Por que escolher a UseAr</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="swiper-slide hero-slide hero-slide--temperature">
+            <div class="hero-overlay"></div>
+            <div class="hero-content mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
+              <div class="hero-copy">
+                <span class="hero-kicker"><i class="fa-solid fa-wind" aria-hidden="true"></i> Conforto e qualidade do ar</span>
+                <h2>Ar gelado,<br>limpo e saudável<br>dentro do veículo</h2>
+                <p>Higienização completa para reduzir odores, fungos e bactérias no sistema de ventilação.</p>
+                <a class="button button--primary" href="https://wa.me/5534999919637?text=Olá%2C%20quero%20agendar%20uma%20higienização%20do%20ar-condicionado." target="_blank" rel="noopener">Agendar higienização</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="hero-pagination swiper-pagination" aria-hidden="true"></div>
+        <button class="hero-arrow hero-arrow--prev swiper-button-prev" aria-label="Slide anterior"></button>
+        <button class="hero-arrow hero-arrow--next swiper-button-next" aria-label="Próximo slide"></button>
+      </div>
+
+      <div class="hero-trust" aria-label="Informações rápidas">
+        <div><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span><b>Uberlândia - MG</b>Av. Araguari, 1975</span></div>
+        <div><i class="fa-solid fa-clock" aria-hidden="true"></i><span><b>Atendimento</b>Seg. a sex. 8h às 18h</span></div>
+        <div><i class="fa-solid fa-star" aria-hidden="true"></i><span><b>Clientes satisfeitos</b>Serviço profissional</span></div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="diferenciais">
+      <div class="mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
+        <header class="section-heading" data-aos="fade-up">
+          <span>Nosso Diferencial</span>
+          <h2>Por que escolher a UseAr?</h2>
+          <p>Atendimento transparente, estrutura completa e cuidado técnico em todas as etapas do serviço.</p>
+        </header>
+
+        <div class="benefits-grid">
+          <article class="benefit-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="benefit-icon"><i class="fa-solid fa-award" aria-hidden="true"></i></div>
+            <h3>Garantia e Qualidade</h3>
+            <p>Profissionais experientes, tecnologia de ponta e garantia nos serviços realizados.</p>
+          </article>
+          <article class="benefit-card" data-aos="fade-up" data-aos-delay="70">
+            <div class="benefit-icon"><i class="fa-regular fa-clock" aria-hidden="true"></i></div>
+            <h3>Atendimento Ágil</h3>
+            <p>Estoque de peças e processos organizados para agilizar manutenções com eficiência.</p>
+          </article>
+          <article class="benefit-card" data-aos="fade-up" data-aos-delay="140">
+            <div class="benefit-icon"><i class="fa-regular fa-credit-card" aria-hidden="true"></i></div>
+            <h3>Pagamento Facilitado</h3>
+            <p>Aceitamos os principais cartões e oferecemos condições de parcelamento.</p>
+          </article>
+          <article class="benefit-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="benefit-icon"><i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i></div>
+            <h3>Diagnóstico Preciso</h3>
+            <p>Equipamentos de última geração para identificar falhas com rapidez e assertividade.</p>
+          </article>
+          <article class="benefit-card" data-aos="fade-up" data-aos-delay="70">
+            <div class="benefit-icon"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></div>
+            <h3>Técnicos Especializados</h3>
+            <p>Equipe com ampla experiência em sistemas de climatização automotiva.</p>
+          </article>
+          <article class="benefit-card" data-aos="fade-up" data-aos-delay="140">
+            <div class="benefit-icon"><i class="fa-solid fa-spray-can-sparkles" aria-hidden="true"></i></div>
+            <h3>Higienização Completa</h3>
+            <p>Eliminamos fungos e bactérias para deixar o ar do seu veículo mais limpo e saudável.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="air-cta" aria-label="Agendamento de manutenção">
+      <div class="air-particles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="air-cta__content mx-auto max-w-4xl px-4 text-center" data-aos="zoom-in">
+        <div class="round-icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></div>
+        <h2>Volte a Respirar Ar Puro!</h2>
+        <p>Agende uma avaliação e recupere o conforto dentro do seu veículo.</p>
+        <a class="button button--primary" href="https://wa.me/5534999919637?text=Olá%2C%20quero%20agendar%20a%20manutenção%20do%20ar-condicionado%20do%20meu%20veículo." target="_blank" rel="noopener">Agende aqui a sua manutenção</a>
+      </div>
+    </section>
+
+    <section class="services-section" id="servicos">
+      <div class="services-layout mx-auto grid w-full max-w-[1500px] items-center px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div class="services-copy" data-aos="fade-right">
+          <span class="section-label">O que fazemos de melhor</span>
+          <h2>Principais Serviços</h2>
+          <p class="services-intro">A UseAr oferece soluções completas em filtragem de ar e climatização automotiva, com equipamentos de alta performance e diagnóstico preciso.</p>
+
+          <ul class="services-list">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Manutenção preventiva e corretiva do sistema de ar-condicionado</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Recarga de gás refrigerante R134a</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Recarga R1234yf para veículos híbridos e elétricos</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Higienização com ozônio e troca do filtro de cabine</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Diagnóstico elétrico e eletrônico</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Teste de eficiência e identificação de vazamentos</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Soldas de cobre e alumínio, tubos e mangueiras</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Troca de evaporador e radiador de ar quente</span></li>
+          </ul>
+
+          <a class="text-link" href="https://wa.me/5534999919637?text=Olá%2C%20quero%20mais%20informações%20sobre%20os%20serviços%20da%20UseAr." target="_blank" rel="noopener">Falar com um especialista <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="services-visual" data-aos="fade-left">
+          <div class="services-photo-wrap">
+            <img src="assets/img/servico-principal.webp" alt="Veículo em manutenção do sistema de ar-condicionado na oficina UseAr" loading="lazy" width="600" height="956">
+            <div class="photo-badge"><strong>Diagnóstico</strong><span>com equipamentos profissionais</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="workshop-section" id="oficina">
+      <div class="mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
+        <div class="workshop-header" data-aos="fade-up">
+          <div>
+            <span class="section-label">Nossa Estrutura</span>
+            <h2>Conheça Nossa Oficina</h2>
+            <p>Veja de perto nossa estrutura, equipamentos e alguns trabalhos realizados.</p>
+          </div>
+          <a class="button button--primary button--small" href="https://www.instagram.com/usearoficina/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Siga no Instagram</a>
+        </div>
+
+        <div class="gallery-grid" data-aos="fade-up" data-aos-delay="100">
+          <button class="gallery-item gallery-item--large" type="button" data-gallery="assets/img/galeria-04.webp" aria-label="Ampliar foto de manutenção do veículo">
+            <img src="assets/img/galeria-04.webp" alt="Manutenção de ar-condicionado com mangueiras de serviço conectadas" loading="lazy">
+          </button>
+          <button class="gallery-item" type="button" data-gallery="assets/img/galeria-02.webp" aria-label="Ampliar foto da fachada">
+            <img src="assets/img/galeria-02.webp" alt="Fachada azul da oficina UseAr" loading="lazy">
+          </button>
+          <button class="gallery-item" type="button" data-gallery="assets/img/galeria-08.webp" aria-label="Ampliar foto de técnico trabalhando">
+            <img src="assets/img/galeria-08.webp" alt="Técnico da UseAr trabalhando em veículo" loading="lazy">
+          </button>
+          <button class="gallery-item" type="button" data-gallery="assets/img/galeria-03.webp" aria-label="Ampliar foto do filtro de cabine">
+            <img src="assets/img/galeria-03.webp" alt="Filtro de cabine usado sendo inspecionado" loading="lazy">
+          </button>
+          <button class="gallery-item" type="button" data-gallery="assets/img/galeria-07.webp" aria-label="Ampliar foto de desmontagem interna">
+            <img src="assets/img/galeria-07.webp" alt="Técnico realizando manutenção interna no painel do veículo" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="air-cta air-cta--second" aria-label="Agende sua manutenção">
+      <div class="air-cta__content mx-auto max-w-5xl px-4 text-center" data-aos="zoom-in">
+        <div class="round-icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></div>
+        <h2>Precisando de Revisão e Manutenção do Ar Condicionado do seu Veículo?</h2>
+        <p>Fale agora com a equipe e agende o melhor horário para sua avaliação.</p>
+        <a class="button button--primary" href="https://wa.me/5534999919637?text=Olá%2C%20preciso%20revisar%20o%20ar-condicionado%20do%20meu%20veículo." target="_blank" rel="noopener">Agende aqui a sua manutenção</a>
+      </div>
+    </section>
+
+    <section class="reviews-section" id="avaliacoes">
+      <div class="mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
+        <header class="section-heading section-heading--center" data-aos="fade-up">
+          <span>Avaliações</span>
+          <h2>Saiba o que os clientes estão dizendo</h2>
+          <p>Experiências reais de quem já confiou o veículo à nossa equipe.</p>
+        </header>
+
+        <div class="trustindex-widget" data-aos="fade-up">
+          <script defer async src='https://cdn.trustindex.io/loader.js?cfff6e475bf8161984261190330'></script>
+        </div>
+
+        <div class="contact-grid">
+          <div class="map-card" data-aos="fade-right">
+            <iframe title="Mapa da UseAr em Uberlândia" src="https://www.google.com/maps?q=UseAr%20Servi%C3%A7os%20de%20Ar%20Automotivo%20Av.%20Araguari%201975%20Uberl%C3%A2ndia&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+
+          <aside class="hours-card" data-aos="fade-left">
+            <div class="hours-icon"><i class="fa-regular fa-clock" aria-hidden="true"></i></div>
+            <span>Horário de Funcionamento</span>
+            <h3>Segunda à sexta<br>das 8h às 18h</h3>
+            <p>Sábado das 8h às 12h</p>
+            <hr>
+            <address><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Av. Araguari, 1975<br>Martins, Uberlândia - MG</address>
+            <a class="text-link" href="https://www.google.com/maps/dir/?api=1&destination=Av.%20Araguari%2C%201975%2C%20Uberl%C3%A2ndia%20MG" target="_blank" rel="noopener">Traçar rota <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
+      <div class="footer-brand">
+        <img src="assets/img/logo-usear.png" alt="UseAr" width="250" height="87">
+        <p>Especialistas em manutenção, reparo e higienização de ar-condicionado automotivo.</p>
+      </div>
+      <div>
+        <h2>Navegação</h2>
+        <a href="#inicio">Home</a><a href="#diferenciais">Diferenciais</a><a href="#servicos">Serviços</a><a href="#oficina">Oficina</a>
+      </div>
+      <div>
+        <h2>Contato</h2>
+        <a href="tel:+553432257121"><i class="fa-solid fa-phone" aria-hidden="true"></i> (34) 3225-7121</a>
+        <a href="https://wa.me/5534999919637" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> (34) 99991-9637</a>
+        <a href="https://www.instagram.com/usearoficina/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i> @usearoficina</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© <span id="current-year"></span> UseAr. Todos os direitos reservados.</p></div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/5534999919637?text=Olá%2C%20vim%20pelo%20site%20da%20UseAr." target="_blank" rel="noopener" aria-label="Falar com a UseAr pelo WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>Fale conosco</span>
+  </a>
+
+  <dialog class="gallery-modal" id="gallery-modal">
+    <button class="gallery-modal__close" type="button" aria-label="Fechar imagem"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    <img src="" alt="Foto ampliada da oficina UseAr" id="gallery-modal-image">
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
