@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0787c8">
+  <meta name="description" content="Conheça a UseAr, especialista em ar-condicionado automotivo para veículos leves e pesados em Uberlândia e região.">
+  <meta property="og:title" content="Quem Somos | UseAr">
+  <meta property="og:description" content="Experiência, estrutura e atendimento especializado em climatização automotiva em Uberlândia e região.">
+  <meta property="og:image" content="assets/img/og-usear.webp">
+  <meta property="og:type" content="website">
+  <title>Quem Somos | UseAr</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            usear: {
+              50: '#ecf8ff',
+              100: '#d5efff',
+              500: '#0787c8',
+              600: '#026da8',
+              700: '#075887',
+              950: '#06131d'
+            }
+          },
+          fontFamily: { sans: ['Poppins', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="about-page bg-white text-slate-900 antialiased">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" id="inicio">
+    <div class="header-inner mx-auto flex w-full max-w-[1500px] items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a class="brand" href="index.html#inicio" aria-label="UseAr - voltar ao início">
+        <img src="assets/img/logo-usear.png" alt="UseAr Ar-condicionado Automotivo" width="320" height="111">
+      </a>
+
+      <button class="menu-toggle lg:hidden" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="menu-principal" class="main-nav" aria-label="Navegação principal">
+        <a href="index.html#inicio">Home</a>
+        <a href="quem-somos.html" aria-current="page">Quem Somos</a>
+        <a href="index.html#servicos">Serviços</a>
+        <a href="index.html#oficina">Trabalhos realizados</a>
+        <a class="nav-cta" href="index.html#avaliacoes">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="about-intro" aria-labelledby="titulo-quem-somos">
+      <div class="about-shell mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
+        <header class="about-page-title" data-aos="fade-down">
+          <span>Conheça-nos</span>
+          <h1 id="titulo-quem-somos">Quem Somos</h1>
+        </header>
+
+        <div class="about-intro-grid">
+          <div class="about-intro-copy" data-aos="fade-right">
+            <h2>
+              Especialistas em
+              <strong>ar-condicionado automotivo</strong>
+              para veículos leves e pesados
+            </h2>
+
+            <div class="about-text">
+              <p>Na UseAr, somos referência em climatização automotiva para veículos leves e pesados. Com uma equipe experiente e altamente qualificada, garantimos um atendimento diferenciado, com serviços de alta qualidade e uso exclusivo de peças originais.</p>
+              <p>Nosso compromisso vai além da excelência técnica: buscamos sempre oferecer um ambiente seguro e saudável para nossos colaboradores, tanto na oficina quanto em atendimentos externos. Atuamos com responsabilidade, adotando práticas que respeitam o meio ambiente e a saúde de todos os envolvidos.</p>
+            </div>
+          </div>
+
+          <figure class="about-photo" data-aos="fade-left">
+            <span class="about-air-line about-air-line--one" aria-hidden="true"></span>
+            <span class="about-air-line about-air-line--two" aria-hidden="true"></span>
+            <img src="assets/img/quem-somos-oficina.webp" alt="Oficina da UseAr com veículo em manutenção" width="1318" height="886">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-region" aria-labelledby="titulo-regiao">
+      <div class="about-shell mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
+        <div class="about-region-grid">
+          <figure class="region-map" data-aos="zoom-in-right">
+            <img src="assets/img/mapa-brasil-usear.webp" alt="Mapa do Brasil com destaque para Uberlândia, Minas Gerais" width="1180" height="1040">
+          </figure>
+
+          <div class="region-copy" data-aos="fade-left">
+            <span class="region-kicker"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Presença regional</span>
+            <h2 id="titulo-regiao">Atendimento especializado em <strong>Uberlândia e região</strong></h2>
+            <p>Com ampla experiência no mercado de climatização automotiva, a UseAr é referência em serviços de ar-condicionado e direção hidráulica para veículos leves e pesados. Atuamos com agilidade, excelência e atendimento personalizado, sempre com peças originais e garantia de qualidade.</p>
+            <p>Nossa estrutura técnica nos permite atender com eficiência tanto na oficina quanto em campo, seja em fazendas, transportadoras ou onde o cliente precisar, oferecendo manutenções preventivas e corretivas com rapidez e segurança.</p>
+            <p>Presente na rotina de quem precisa manter seus veículos e máquinas funcionando com alto desempenho, a UseAr é sinônimo de confiança e compromisso em Uberlândia e toda a região.</p>
+          </div>
+        </div>
+
+        <div class="about-stats" aria-label="Números da UseAr">
+          <article class="about-stat" data-aos="fade-up">
+            <strong><span class="counter-prefix">+</span><span data-counter="2106">2106</span></strong>
+            <span>Manutenções</span>
+          </article>
+          <article class="about-stat" data-aos="fade-up" data-aos-delay="100">
+            <strong><span class="counter-prefix">+</span><span data-counter="1257">1257</span></strong>
+            <span>Clientes</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-values" aria-labelledby="titulo-valores">
+      <div class="about-shell mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
+        <h2 class="sr-only" id="titulo-valores">Missão, visão e valores</h2>
+
+        <div class="values-grid">
+          <article class="value-card" data-aos="fade-up">
+            <div class="value-icon" aria-hidden="true"><i class="fa-regular fa-compass"></i></div>
+            <h3>Missão</h3>
+            <p>Conhecer as necessidades e oportunidades do mercado e de nossos clientes e oferecer soluções técnicas com Qualidade, Segurança e respeito ao Meio Ambiente.</p>
+          </article>
+
+          <article class="value-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="value-icon" aria-hidden="true"><i class="fa-regular fa-eye"></i></div>
+            <h3>Visão</h3>
+            <p>Destacar-se no mercado com uma atuação sólida, sempre buscando satisfazer as expectativas dos nossos clientes.</p>
+          </article>
+
+          <article class="value-card" data-aos="fade-up" data-aos-delay="160">
+            <div class="value-icon" aria-hidden="true"><i class="fa-regular fa-handshake"></i></div>
+            <h3>Valores</h3>
+            <p>Garantir um ambiente de trabalho seguro e saudável para os colaboradores, adotando medidas eficazes para reduzir riscos à saúde, segurança e ao meio ambiente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
+      <div class="footer-brand">
+        <img src="assets/img/logo-usear.png" alt="UseAr" width="250" height="87">
+        <p>Especialistas em manutenção, reparo e higienização de ar-condicionado automotivo.</p>
+      </div>
+      <div>
+        <h2>Navegação</h2>
+        <a href="index.html#inicio">Home</a>
+        <a href="quem-somos.html">Quem Somos</a>
+        <a href="index.html#servicos">Serviços</a>
+        <a href="index.html#oficina">Trabalhos realizados</a>
+      </div>
+      <div>
+        <h2>Contato</h2>
+        <a href="tel:+553432257121"><i class="fa-solid fa-phone" aria-hidden="true"></i> (34) 3225-7121</a>
+        <a href="https://wa.me/5534999919637" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> (34) 99991-9637</a>
+        <a href="https://www.instagram.com/usearoficina/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i> @usearoficina</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="current-year"></span> UseAr. Todos os direitos reservados. Desenvolvido por <a href="https://boskodev.com.br/" target="_blank" rel="noopener">BoskoDev</a>.</p>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/5534999919637?text=Olá%2C%20vim%20pelo%20site%20da%20UseAr." target="_blank" rel="noopener" aria-label="Falar com a UseAr pelo WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>Fale conosco</span>
+  </a>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

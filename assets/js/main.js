@@ -81,6 +81,35 @@ document.addEventListener('DOMContentLoaded', () => {
   const year = document.querySelector('#current-year');
   if (year) year.textContent = String(new Date().getFullYear());
 
+  const counters = document.querySelectorAll('[data-counter]');
+  const animateCounter = (counter) => {
+    const target = Number(counter.dataset.counter || 0);
+    const duration = reducedMotion ? 0 : 1300;
+    const startTime = performance.now();
+
+    const update = (currentTime) => {
+      const elapsed = currentTime - startTime;
+      const progress = duration === 0 ? 1 : Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      counter.textContent = String(Math.round(target * eased));
+      if (progress < 1) requestAnimationFrame(update);
+    };
+
+    requestAnimationFrame(update);
+  };
+
+  if (counters.length) {
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        animateCounter(entry.target);
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: .45 });
+
+    counters.forEach((counter) => counterObserver.observe(counter));
+  }
+
   window.addEventListener('resize', () => {
     if (window.innerWidth >= 1024) closeMenu();
     heroSwiper?.update();
