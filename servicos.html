@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0787c8">
+  <meta name="description" content="Conheça os serviços da UseAr para ar-condicionado automotivo, direção hidráulica, higienização e atendimento de veículos leves e pesados em Uberlândia e região.">
+  <meta property="og:title" content="Serviços | UseAr">
+  <meta property="og:description" content="Manutenção, diagnóstico, recarga de gás, higienização e soluções completas para climatização automotiva.">
+  <meta property="og:image" content="assets/img/og-usear.webp">
+  <meta property="og:type" content="website">
+  <title>Serviços | UseAr</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            usear: {
+              50: '#ecf8ff',
+              100: '#d5efff',
+              500: '#0787c8',
+              600: '#026da8',
+              700: '#075887',
+              950: '#06131d'
+            }
+          },
+          fontFamily: { sans: ['Poppins', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="service-page bg-white text-slate-900 antialiased">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" id="inicio">
+    <div class="header-inner mx-auto flex w-full max-w-[1500px] items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a class="brand" href="index.html#inicio" aria-label="UseAr - voltar ao início">
+        <img src="assets/img/logo-usear.png" alt="UseAr Ar-condicionado Automotivo" width="320" height="111">
+      </a>
+
+      <button class="menu-toggle lg:hidden" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="menu-principal" class="main-nav" aria-label="Navegação principal">
+        <a href="index.html#inicio">Home</a>
+        <a href="quem-somos.html">Quem Somos</a>
+        <a href="servicos.html" aria-current="page">Serviços</a>
+        <a href="index.html#oficina">Trabalhos realizados</a>
+        <a class="nav-cta" href="index.html#avaliacoes">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="service-page-main">
+    <section class="service-page-hero" aria-labelledby="titulo-servicos">
+      <div class="service-page-shell mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
+        <div class="service-page-heading" data-aos="fade-down">
+          <span>O que fazemos de melhor</span>
+          <h1 id="titulo-servicos">Nossos Serviços</h1>
+          <p>Soluções completas em climatização automotiva, com diagnóstico preciso, equipe especializada e atendimento para veículos leves, pesados e frotas.</p>
+        </div>
+      </div>
+      <span class="service-air-stroke service-air-stroke--one" aria-hidden="true"></span>
+      <span class="service-air-stroke service-air-stroke--two" aria-hidden="true"></span>
+    </section>
+
+    <section class="service-catalog" aria-labelledby="titulo-catalogo">
+      <div class="service-page-shell mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
+        <h2 class="sr-only" id="titulo-catalogo">Catálogo de serviços da UseAr</h2>
+
+        <div class="service-card-grid">
+          <article class="service-card" data-aos="fade-up">
+            <figure class="service-card-photo">
+              <img src="assets/img/servico-card-01.webp" alt="Equipe da UseAr realizando atendimento externo em veículo pesado" width="487" height="302">
+            </figure>
+            <div class="service-card-body">
+              <span class="service-card-number">01</span>
+              <h3>Manutenção e diagnóstico</h3>
+              <ul>
+                <li>Manutenção preventiva e corretiva do ar-condicionado</li>
+                <li>Diagnóstico de vazamentos e falhas elétricas</li>
+                <li>Instalação de kits de ar-condicionado originais</li>
+                <li>Teste completo de eficiência do sistema</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-aos="fade-up" data-aos-delay="70">
+            <figure class="service-card-photo">
+              <img src="assets/img/servico-card-02.webp" alt="Veículos em manutenção dentro da oficina UseAr" width="485" height="302">
+            </figure>
+            <div class="service-card-body">
+              <span class="service-card-number">02</span>
+              <h3>Recarga e reparos</h3>
+              <ul>
+                <li>Aplicação de carga de gás refrigerante correta</li>
+                <li>Recarga de R134a e R1234yf</li>
+                <li>Reparos de compressores e condensadores</li>
+                <li>Reparos de tubos, conexões e mangueiras</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-aos="fade-up" data-aos-delay="140">
+            <figure class="service-card-photo">
+              <img src="assets/img/servico-card-03.webp" alt="Estrutura interna da oficina UseAr com diversos veículos" width="487" height="302">
+            </figure>
+            <div class="service-card-body">
+              <span class="service-card-number">03</span>
+              <h3>Instalação e higienização</h3>
+              <ul>
+                <li>Instalação de kits e ar-condicionado de teto</li>
+                <li>Higienização ecológica com ozônio</li>
+                <li>Troca do filtro antipólen e filtro de cabine</li>
+                <li>Limpeza de evaporador e dutos de ventilação</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-aos="fade-up">
+            <figure class="service-card-photo">
+              <img src="assets/img/galeria-07.webp" alt="Técnico da UseAr realizando serviço no painel de um veículo" width="1080" height="1080">
+            </figure>
+            <div class="service-card-body">
+              <span class="service-card-number">04</span>
+              <h3>Elétrica e direção hidráulica</h3>
+              <ul>
+                <li>Diagnóstico elétrico e eletrônico do sistema</li>
+                <li>Reparo de comandos, sensores e componentes</li>
+                <li>Manutenção de direção hidráulica</li>
+                <li>Identificação de ruídos e perda de rendimento</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-aos="fade-up" data-aos-delay="70">
+            <figure class="service-card-photo">
+              <img src="assets/img/galeria-04.webp" alt="Sistema de ar-condicionado automotivo em manutenção na oficina" width="1080" height="1080">
+            </figure>
+            <div class="service-card-body">
+              <span class="service-card-number">05</span>
+              <h3>Veículos pesados e frotas</h3>
+              <ul>
+                <li>Atendimento para caminhões, máquinas e utilitários</li>
+                <li>Planos preventivos para empresas e transportadoras</li>
+                <li>Reparo de radiador de ar quente e evaporador</li>
+                <li>Soldas técnicas em cobre e alumínio</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-aos="fade-up" data-aos-delay="140">
+            <figure class="service-card-photo">
+              <img src="assets/img/galeria-08.webp" alt="Profissional da UseAr avaliando o sistema de um automóvel" width="1080" height="1080">
+            </figure>
+            <div class="service-card-body">
+              <span class="service-card-number">06</span>
+              <h3>Atendimento móvel</h3>
+              <ul>
+                <li>Suporte técnico em campo e atendimento externo</li>
+                <li>Atendimento em fazendas, empresas e transportadoras</li>
+                <li>Avaliação técnica antes da execução do serviço</li>
+                <li>Agilidade com equipamentos próprios e equipe preparada</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-confidence" aria-labelledby="titulo-confianca">
+      <div class="service-page-shell mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
+        <div class="service-confidence-grid">
+          <div class="service-confidence-copy" data-aos="fade-right">
+            <span class="section-label">Serviço completo</span>
+            <h2 id="titulo-confianca">Seu veículo climatizado com segurança e alto desempenho</h2>
+            <p>Na UseAr, cada serviço começa com uma avaliação técnica. A equipe identifica a causa do problema, explica o que precisa ser feito e executa o reparo com peças adequadas e garantia de qualidade.</p>
+          </div>
+
+          <div class="service-confidence-points" data-aos="fade-left">
+            <div><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span><strong>Garantia e qualidade</strong>Serviços executados por profissionais especializados.</span></div>
+            <div><i class="fa-solid fa-gauge-high" aria-hidden="true"></i><span><strong>Diagnóstico preciso</strong>Equipamentos adequados para localizar falhas com rapidez.</span></div>
+            <div><i class="fa-solid fa-truck-fast" aria-hidden="true"></i><span><strong>Atendimento ágil</strong>Estrutura para oficina, empresas, frotas e atendimento externo.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="air-cta air-cta--second" aria-labelledby="titulo-agendamento">
+      <div class="air-particles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="air-cta__content mx-auto w-full max-w-[1500px] px-4 text-center sm:px-6 lg:px-8" data-aos="zoom-in">
+        <span class="round-icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span>
+        <h2 id="titulo-agendamento">Precisando de revisão ou manutenção?</h2>
+        <p>Fale diretamente com a equipe da UseAr e solicite uma avaliação para o seu veículo.</p>
+        <a class="button button--primary" href="https://wa.me/5534999919637?text=Olá%2C%20vim%20pela%20página%20de%20serviços%20da%20UseAr%20e%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Agendar manutenção
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
+      <div class="footer-brand">
+        <img src="assets/img/logo-usear.png" alt="UseAr" width="250" height="87">
+        <p>Especialistas em manutenção, reparo e higienização de ar-condicionado automotivo.</p>
+      </div>
+      <div>
+        <h2>Navegação</h2>
+        <a href="index.html#inicio">Home</a>
+        <a href="quem-somos.html">Quem Somos</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="index.html#oficina">Trabalhos realizados</a>
+      </div>
+      <div>
+        <h2>Contato</h2>
+        <a href="tel:+553432257121"><i class="fa-solid fa-phone" aria-hidden="true"></i> (34) 3225-7121</a>
+        <a href="https://wa.me/5534999919637" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> (34) 99991-9637</a>
+        <a href="https://www.instagram.com/usearoficina/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i> @usearoficina</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="current-year"></span> UseAr. Todos os direitos reservados. Desenvolvido por <a href="https://boskodev.com.br/" target="_blank" rel="noopener">BoskoDev</a>.</p>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/5534999919637?text=Olá%2C%20vim%20pelo%20site%20da%20UseAr." target="_blank" rel="noopener" aria-label="Falar com a UseAr pelo WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>Fale conosco</span>
+  </a>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
