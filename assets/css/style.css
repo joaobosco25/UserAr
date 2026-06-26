@@ -1017,3 +1017,169 @@ button { font: inherit; }
   white-space: nowrap !important;
   border: 0 !important;
 }
+
+/* ==========================================================================
+   Correção de largura no mobile
+   Evita que navbar, carrossel e animações criem rolagem lateral.
+   ========================================================================== */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.site-header,
+.header-inner,
+.hero,
+.hero-swiper,
+.swiper-wrapper,
+.hero-slide,
+.hero-content,
+main,
+section {
+  max-width: 100%;
+}
+
+.header-inner,
+.hero-content {
+  min-width: 0;
+}
+
+@media (max-width: 639px) {
+  :root {
+    --header-height: 82px;
+  }
+
+  .site-header {
+    width: 100%;
+    max-width: 100vw;
+    overflow: visible;
+  }
+
+  .header-inner {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .brand {
+    width: clamp(132px, 42vw, 165px);
+    max-width: calc(100% - 66px);
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .brand img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .menu-toggle {
+    flex: 0 0 46px;
+    margin-left: 10px;
+  }
+
+  .main-nav {
+    left: 12px;
+    right: 12px;
+    width: auto;
+    max-width: calc(100vw - 24px);
+  }
+
+  .hero,
+  .hero-swiper,
+  .swiper-wrapper,
+  .hero-slide {
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .hero-copy,
+  .hero-copy h1,
+  .hero-copy h2,
+  .hero-copy p,
+  .hero-actions {
+    max-width: 100%;
+  }
+
+  .hero-copy h1,
+  .hero-copy h2 {
+    overflow-wrap: anywhere;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: min(100%, 330px);
+  }
+
+  .hero-actions .button {
+    width: 100%;
+    min-width: 0;
+    padding-right: .85rem;
+    padding-left: .85rem;
+    white-space: normal;
+  }
+
+  /* O fade lateral do AOS pode aumentar a largura visual antes da animação. */
+  [data-aos='fade-right'],
+  [data-aos='fade-left'] {
+    transform: translate3d(0, 28px, 0);
+  }
+}
+
+@supports not (overflow: clip) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+
+/* ==========================================================================
+   Correção definitiva da navegação mobile
+   Mantém o menu visível fora da altura do header sem criar rolagem lateral.
+   ========================================================================== */
+@media (max-width: 1023px) {
+  body {
+    min-width: 0;
+  }
+
+  .site-header {
+    overflow: visible;
+  }
+
+  .header-inner {
+    position: relative;
+    min-width: 0;
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  .main-nav {
+    box-sizing: border-box;
+    width: auto;
+    max-width: none;
+    max-height: calc(100svh - var(--header-height) - 1.2rem);
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  body.menu-open {
+    overflow: hidden;
+  }
+}
